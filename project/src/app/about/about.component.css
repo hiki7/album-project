@@ -1,0 +1,52 @@
+.about-container {
+  width: 100%;
+  max-width: 1400px;
+  height: 100vh;
+  margin: auto;
+  color: var(--text);
+  padding-top: 100px;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.description {
+  display: flex;
+  font-size: 25px;
+}
+
+.description-main {
+  text-align: justify;
+  line-height: 2.5rem;
+  padding-right: 25px;
+}
+
+.description a {
+  text-decoration: underline;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.link-photo {
+  width: 450px;
+  border-radius: 15px;
+}
+
+@media (max-width: 767px) {
+  .description {
+    font-size: 20px;
+    margin: 0 10px;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+  }
+
+  .link-photo {
+    width: 100%;
+    max-width: none;
+    margin-top: 20px;
+  }
+}

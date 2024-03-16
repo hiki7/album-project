@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main);
+  color: var(--text);
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header-left {
+  margin-left: 24px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-image {
+  width: 70px;
+  margin-right: 10px;
+  margin-top: -15px;
+}
+
+.logo-title {
+  color: var(--focus);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.header-right a {
+  color: var(--text);
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 700;
+}
+
+.header-right a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .logo-title {
+    display: none;
+  }
+}
+

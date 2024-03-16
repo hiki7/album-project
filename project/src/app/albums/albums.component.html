@@ -1,0 +1,14 @@
+<h1 class="title">Albums</h1>
+<input class="search" type="text" placeholder="Search by album ID" [(ngModel)]="filterText" (keyup)="filterResults()">
+<div class="albums-container" *ngIf="loaded">
+  <div class="card" *ngFor="let album of filteredAlbums">
+    <a [routerLink]="['/album', album.id]" class="card-id">
+      ID: {{ album.id }}
+    </a>
+    <button (click)="deletePost(album.id)">Delete</button>
+  </div>
+</div>
+
+<ng-template #loading>
+  <p>Albums are loading...</p>
+</ng-template>

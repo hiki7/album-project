@@ -1,0 +1,14 @@
+<a [routerLink]="['/albums']" class="go-back-link">Go Back</a>
+<div class="album-detail-container">
+  <h1 class="album-code">Album #{{album.id}}</h1>
+  <h2 class="album-title">Title: {{album.title}}</h2>
+  <fieldset>
+    <p class="change-name">Change the album's name:</p>
+    <input type="text" [(ngModel)]="title" placeholder="Enter title">
+    <button (click)="changeTitle()">
+      <p *ngIf="loading">...</p>
+      <p *ngIf="!loading">Save</p>
+    </button>
+  </fieldset>
+  <h2 class="photos-link"><a routerLink="photos">see photos</a></h2>
+</div>
