@@ -22,11 +22,12 @@
 
 .title {
     text-align: center;
-    font-size: 80px;
     color: var(--text);
+    font-size: 80px;
     padding-top: 40vh;
     position: relative;
     z-index: 1;
+    cursor: default;
 }
 
 .dot {

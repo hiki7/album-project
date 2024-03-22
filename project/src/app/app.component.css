@@ -38,19 +38,22 @@
 
 .header-right a {
   color: var(--text);
-  padding: 10px 20px;
+  margin: 0 35px 2px 35px;
   text-decoration: none;
-  margin: 0 10px;
   font-weight: 700;
 }
 
 .header-right a:hover {
-  text-decoration: underline;
+  border-bottom: 3px solid var(--focus);
 }
 
 @media (max-width: 767px) {
   .logo-title {
     display: none;
+  }
+
+  .header-right a {
+    margin: 0 20px 2px 20px;
   }
 }
 

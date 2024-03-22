@@ -24,6 +24,10 @@
   padding-right: 25px;
 }
 
+.description-main a:hover {
+  color: var(--focus);
+}
+
 .description a {
   text-decoration: underline;
   color: var(--text);
